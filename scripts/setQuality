@@ -1,0 +1,9 @@
+#!/bin/bash
+
+. common.sh
+if [ $# -ne 1 ]; then
+    echo "Illegal number of parameters"
+    echo "Usage: setQuality <quality>"
+else
+    python $CONFIG_MANAGER/setQuality.py $1
+fi
