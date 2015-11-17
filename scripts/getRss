@@ -2,3 +2,4 @@
 
 . common.sh
 python $CONFIG_MANAGER/getRss.py
+
