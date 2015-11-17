@@ -1,9 +1,7 @@
 #!/bin/bash
 
-if [ -f /opt/setup.sh ]
-then
+if [ ! -f /opt/flexget/config.yml ]; then
     /opt/setup.sh
-    rm /opt/setup.sh 
 fi
 
 while :

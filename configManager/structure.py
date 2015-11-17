@@ -1,6 +1,11 @@
 path = "/opt/flexget/config.yml"
 default = dict(
-    tasks = dict(),
+    tasks = dict(
+	ezrs = dict(
+	    template = "tv",
+	    rss = "https://eztv.ag/ezrss.xml"
+	)
+    ),
     templates = dict(
         tv = dict(
             download = "/opt/torrents",
