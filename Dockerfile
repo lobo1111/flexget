@@ -16,3 +16,4 @@ RUN chmod +x /opt/start.sh
 COPY configManager opt/configManager/
 
 WORKDIR /opt/
+ENTRYPOINT ./start.sh
