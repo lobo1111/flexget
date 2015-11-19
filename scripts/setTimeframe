@@ -1,9 +1,0 @@
-#!/bin/bash
-
-. common.sh
-if [ $# -ne 1 ]; then
-    echo "Illegal number of parameters"
-    echo "Usage: setTimeframe <quality>"
-else
-    python $CONFIG_MANAGER/setTimeframe.py $1
-fi

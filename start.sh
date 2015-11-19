@@ -1,11 +1,10 @@
 #!/bin/bash
 
-if [ ! -f /opt/flexget/config.yml ]; then
-    /opt/setup.sh
-fi
+cd /opt/configManager
+python main.py "$TRAKT_USER" "$TRAKT_LIST" "$TIMEFRAME" "$QUALITY"
 
 while :
 do
 	flexget -c /opt/flexget/config.yml execute
-	sleep 300
+	sleep $SLEEP
 done

@@ -1,9 +1,9 @@
 path = "/opt/flexget/config.yml"
 default = dict(
     tasks = dict(
-	ezrs = dict(
+	rss = dict(
 	    template = "tv",
-	    rss = "https://eztv.ag/ezrss.xml"
+	    rss = "URL"
 	)
     ),
     templates = dict(
@@ -15,14 +15,14 @@ default = dict(
                     quality = "720p",
                     timeframe = "1 hours"
                 ),
-                from = dict(
-		    trakt_list = dict(
-		        username = "lobo1111",
-			list = "flexget",
-			type = "shows"
-		    )
-		) 
             )
         )
     )
 )
+default['templates']['tv']['configure_series']['from'] = dict(
+                        trakt_list = dict(
+                            username = "trakt_user",
+                            list = "flexget",
+                            type = "shows"
+                        )
+                    )

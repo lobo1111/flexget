@@ -1,9 +1,0 @@
-#!/bin/bash
-
-. common.sh
-if [ $# -ne 1 ]; then
-    echo "Illegal number of parameters"
-    echo "Usage: removeSerie <name>"
-else
-    python $CONFIG_MANAGER/removeSerie.py $1
-fi
