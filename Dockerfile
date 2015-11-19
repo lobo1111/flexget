@@ -10,7 +10,7 @@ ENV TRAKT_LIST flexget
 ENV TIMEFRAME 1 hours
 ENV QUALITY 720p
 ENV SLEEP 300
-ENV RSS https://eztv.ag/ezrss.xml
+ENV RSS http://default.com/rss
 
 COPY start.sh /opt/
 RUN chmod +x /opt/start.sh

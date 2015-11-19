@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /opt/configManager
-python main.py "$TRAKT_USER" "$TRAKT_LIST" "$TIMEFRAME" "$QUALITY"
+python main.py "$TRAKT_USER" "$TRAKT_LIST" "$TIMEFRAME" "$QUALITY" "$RSS"
 
 while :
 do
