@@ -6,6 +6,7 @@ user = sys.argv[1]
 list = sys.argv[2]
 timeframe = sys.argv[3]
 quality = sys.argv[4]
+print structure.default
 structure.default['templates']['tv']['configure_series']['settings']['default']['quality'] = quality
 structure.default['templates']['tv']['configure_series']['settings']['default']['timeframe'] = timeframe
 structure.default['templates']['tv']['configure_series']['settings']['default']['from']['trakt_list']['username'] = user
