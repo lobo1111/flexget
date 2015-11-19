@@ -1,7 +1,6 @@
 import structure
-import save
-import os.path
 import sys
+import yaml
 
 user = sys.argv[1]
 list = sys.argv[2]
@@ -11,4 +10,5 @@ structure.default['templates']['tv']['configure_series']['settings']['default'][
 structure.default['templates']['tv']['configure_series']['settings']['default']['timeframe'] = timeframe
 structure.default['templates']['tv']['configure_series']['settings']['default']['from']['trakt_list']['username'] = user
 structure.default['templates']['tv']['configure_series']['settings']['default']['from']['trakt_list']['list'] = list
-save.saveConfig(structure.default)
+with open(structure.path, 'w') as outfile:
+    outfile.write(yaml.dump(structure.default, default_flow_style=True))
