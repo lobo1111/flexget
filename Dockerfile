@@ -5,12 +5,10 @@ RUN pip install -I flexget
 VOLUME /opt/flexget
 VOLUME /opt/torrents
 
-COPY scripts/* /usr/bin/
-RUN chmod +x /usr/bin/*
+ENV TRAKT_USER trakt_user
+ENV TRAKT_LIST flexget
 
-COPY setup.sh /opt/
 COPY start.sh /opt/
-RUN chmod +x /opt/setup.sh
 RUN chmod +x /opt/start.sh
 
 COPY configManager opt/configManager/

@@ -9,15 +9,19 @@ default = dict(
     templates = dict(
         tv = dict(
             download = "/opt/torrents",
-            series = dict(
+            configure_series = dict(
                 settings = dict(
-                    default = dict(
-                        identified_by = "ep",
-                        quality = "720p",
-                        timeframe = "1 hours"
-                    )
+                    identified_by = "ep",
+                    quality = "720p",
+                    timeframe = "1 hours"
                 ),
-                default = []
+                from = dict(
+		    trakt_list = dict(
+		        username = "lobo1111",
+			list = "flexget",
+			type = "shows"
+		    )
+		) 
             )
         )
     )
