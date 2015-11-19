@@ -1,5 +1,5 @@
 path = "/opt/flexget/config.yml"
-default = dict(
+config = dict(
     tasks = dict(
 	rss = dict(
 	    template = "tv",
@@ -19,7 +19,7 @@ default = dict(
         )
     )
 )
-default['templates']['tv']['configure_series']['from'] = dict(
+config['templates']['tv']['configure_series']['from'] = dict(
                         trakt_list = dict(
                             username = "trakt_user",
                             list = "flexget",
