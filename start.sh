@@ -5,6 +5,7 @@ python main.py "$TRAKT_USER" "$TRAKT_LIST" "$TIMEFRAME" "$QUALITY" "$RSS" "$CLUS
 
 while :
 do
-	flexget -c /opt/flexget/config.yml execute
-	sleep $SLEEP
+        flexget -c /opt/flexget/config.yml execute
+        sleep $SLEEP
 done
+
