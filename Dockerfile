@@ -11,6 +11,8 @@ ENV TIMEFRAME 1 hours
 ENV QUALITY 720p
 ENV SLEEP 300
 ENV RSS http://default.com/rss
+ENV CLUSTER_NAME default
+ENV INSTANCE_NAME default
 
 COPY start.sh /opt/
 RUN chmod +x /opt/start.sh
