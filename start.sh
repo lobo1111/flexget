@@ -8,3 +8,4 @@ do
 	flexget -c /opt/flexget/$CLUSTER_NAME/$INSTANCE_NAME.yml execute
 	sleep $SLEEP
 done
+
